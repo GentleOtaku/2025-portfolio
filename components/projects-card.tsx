@@ -43,19 +43,19 @@ export default function ProjectsCard({
 
           <div className="p-4 sm:p-6 sm:w-1/2 flex flex-col">
             <div className="flex justify-between">
-              <h3 className="text-2xl font-semibold">
-                <a href={siteUrl} target="_blank">
-                  {title}
-                </a>
-              </h3>
-              <div className="flex gap-2">
-                <a href={siteUrl} target="_blank" title="Live Preview">
-                  <FaExternalLinkAlt className=" cursor-pointer" color="blue" />
-                </a>
-                <a href={codeUrl} target="_blank" title="View Code">
-                  <FaGithub className=" cursor-pointer" />
-                </a>
-              </div>
+              <h3 className="text-2xl font-semibold">{title}</h3>
+              {title !== "COVID-19 Simulation Dashboard" && (
+                <div className="flex gap-2">
+                  {title !== "Google Cloud x MLB Hackathon Project" && (
+                    <a href={siteUrl} target="_blank" title="Live Preview">
+                      <FaExternalLinkAlt className=" cursor-pointer" color="blue" />
+                    </a>
+                  )}
+                  <a href={codeUrl} target="_blank" title="View Code">
+                    <FaGithub className=" cursor-pointer" />
+                  </a>
+                </div>
+              )}
             </div>
 
             <p className="mt-2 leading-relaxed text-gray-700">{description}</p>
