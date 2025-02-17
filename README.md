@@ -133,6 +133,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Chris Coding - [chriscodingxyz](https://github.com/chriscodingxyz) - chriscoding@icloud.com
+Colin Yang Coding - [chriscodingxyz](https://github.com/chriscodingxyz) - chriscoding@icloud.com
 
 Project Link: [https://github.com/chriscodingxyz/2024-portfolio](https://github.com/chriscodingxyz/2024-portfolio)

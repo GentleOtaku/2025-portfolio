@@ -10,7 +10,7 @@ import { roboto, silkscreen, ptmono, montserrat } from "@/lib/fonts";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Chris | Portfolio",
+  title: "Colin Yang | Portfolio",
   description: "FullStack Developer 👾",
 };
 

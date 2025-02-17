@@ -60,7 +60,7 @@ function ExperienceItem({ item }: { item: ExperienceDataTypes }) {
       >
         <h3 className="font-semibold capitalize">{item.title}</h3>
         <p className="!mt-1 !font-normal text-gray-700">{item.description}</p>
-        <div className="flex justify-between whitespace-nowrap mt-4">
+        <div className="flex flex-col space-y-1 mt-4">
           <span>
             @
             <a href={item.link} className="text-[0.8rem] font-bold">

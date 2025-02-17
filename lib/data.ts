@@ -1,15 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
-import rmtdevImg from "@/public/rmtdev.png";
-import cherrynftImg from "@/public/project-nft.png";
-import win98Img from "@/public/project-98.png";
-import eventoImg from "@/public/project-evento.png";
-import tailsidImg from "@/public/project-tailsid.png";
+import hackathonImg from "@/public/hackathon.png";
+import covidImg from "@/public/covid.png";
 import type { ExperienceDataTypes, ProjectDataTypes } from "./types";
 
 export const CVLINK =
-  "https://docs.google.com/document/d/1OPZ7AvdwdWzd3o_vCGJ2zDj6sVUScl-3fwgepYFS2-g/edit?usp=sharing";
+  "https://www.linkedin.com/in/colin-y-yang";
 
 export const links = [
   {
@@ -32,138 +28,61 @@ export const links = [
     name: "Experience",
     hash: "#experience",
   },
-  {
-    name: "Contact",
-    hash: "#contact",
-  },
 ] as const;
 
 export const experiencesData: ExperienceDataTypes[] = [
   {
-    title: "Freelance Developer",
-    company: "LittleCraftsLondon",
-    link: "https://littlecraftslondon.com/",
-    location: "Remote, UK",
+    title: "Information Technology Summer Intern",
+    company: "Ware Malcomb",
+    link: "https://www.waremalcomb.com/",
+    location: "Irvine, California, United States",
     description:
-      "I've worked primarily with LittleCraftsLondon.com helping update the website and create new features, especially during holidays and new seasons.",
-    // icon: React.createElement(FaReact),
-    icon: React.createElement(FaReact),
-    date: "2023 - present",
-  },
-  {
-    title: "Junior Developer",
-    company: "NorthCoders",
-    link: "https://northcoders.com/",
-    location: "Remote, UK",
-    description:
-      "Certified fullstack developer bootcamp. The ciriculum focused on React for the frontend and a SQL database for the backend.",
+      "Worked as an IT Intern during Summer 2022, contributing to IT systems support and gaining hands-on experience in a professional IT environment.",
     icon: React.createElement(CgWorkAlt),
-    date: "2023",
-  },
-  {
-    title: "IT Consultant",
-    company: "MacSeven",
-    link: "https://www.mac-seven.com/",
-    location: "London, UK",
-    description:
-      "Worked as an IT Consultant for clients such as John Lewis, The White Company, Debenhams, and more.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2018 - 2022",
+    date: "June 2022 - July 2022",
   },
 ] as const;
 
 export const projectsData: ProjectDataTypes[] = [
   {
-    title: "TailsID (*beta*)",
+    title: "Google Cloud x MLB Hackathon Project",
     description:
-      "Next.js app for managing QR code pet tags. Users can log in, sign up, manage accounts, and order custom QR code tags for their pets",
+      "Built a fan engagement platform with React, Flask, and Tailwind CSS featuring live game schedules, AI news digests, and k-means recommendations.",
     tags: [
-      "TypeScript",
       "React",
-      "Nextjs",
-      "ContextAPI",
+      "Flask",
       "Tailwind",
-      "Prisma",
-      "PSQL",
-      "Zod",
-      "FramerMotion",
-      "Supabase",
+      "Google Cloud",
+      "Python",
+      "Machine Learning",
+      "AI",
+      "Real-time",
+      "Full-stack",
+      "Fan Engagement",
+      "K-Means"
     ],
-    imageUrl: tailsidImg,
-    siteUrl: "https://tailsid.chriscoding.xyz/",
-    codeUrl: "https://github.com/chriscodingxyz/tailsid",
+    imageUrl: hackathonImg,
+    siteUrl: "#",
+    codeUrl: "#",
   },
   {
-    title: "Evento",
+    title: "COVID-19 Simulation Dashboard",
     description:
-      "Nextjs fullstack app with a hosted SQL database or local events. Zod for validation, Prisma for database, and Framer Motion for animations.",
+      "A Flask-based interactive dashboard providing intuitive data insights through simulation of COVID-19 spread.",
     tags: [
-      "TypeScript",
-      "React",
-      "Nextjs",
-      "ContextAPI",
-      "Tailwind",
-      "Prisma",
-      "PSQL",
-      "Zod",
-      "FramerMotion",
+      "Flask",
+      "Python",
+      "Data Visualization",
+      "Dashboard",
+      "Simulation",
+      "COVID-19",
+      "Interactive",
+      "Data Analysis"
     ],
-    imageUrl: eventoImg,
-    siteUrl: "https://evento-seven.vercel.app/",
-    codeUrl: "https://github.com/chriscodingxyz/evento",
+    imageUrl: covidImg,
+    siteUrl: "#",
+    codeUrl: "#",
   },
-
-  {
-    title: "Remote Dev",
-    description:
-      "Job board for remote developer jobs. It has features like filtering, sorting and pagination. Built with Tanstack and Vercel.",
-    tags: ["TypeScript", "React", "Tailwind", "Tanstack"],
-    imageUrl: rmtdevImg,
-    siteUrl: "https://remotedev.vercel.app/",
-    codeUrl: "https://github.com/chriscodingxyz/remotedev",
-  },
-  {
-    title: "Cherry NFT",
-    description:
-      "A fullstack NFT web app for viewing popular NFTs. Uses RestAPI for the data. View by Ethereum or $USD pricing, also via different timeframes",
-    tags: [
-      "JavaScript",
-      "React",
-      "Axios",
-      "Tanstack",
-      "Tailwind",
-      "ContextAPI",
-      "FramerMotion",
-      "Supabase",
-    ],
-    imageUrl: cherrynftImg,
-    siteUrl: "https://nft.chriscoding.xyz/",
-    codeUrl: "https://github.com/chriscodingxyz/rupee-nft",
-  },
-  {
-    title: "Win98 Portfolio",
-    description:
-      "Fun single page application portfolio. Nostalgic Windows 98 theme. Features my projects, my skills and my experience.",
-    tags: ["JavaScript", "React", "Axios", "Tailwind", "Zustand"],
-    imageUrl: win98Img,
-    siteUrl: "https://98.chriscoding.xyz/",
-    codeUrl: "https://github.com/chriscodingxyz/cherrydub98",
-  },
-
-  // {
-  //   title: "CorpComment",
-  //   description:
-  //     "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-  //   tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
-  //   imageUrl: corpcommentImg,
-  // },
-  // {
-  //   title: "Word Analytics",
-  //   description:
-  //     "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-  //   tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
-  //   imageUrl: wordanalyticsImg,
-  // },
 ] as const;
 
 export const techData = {
@@ -217,7 +136,6 @@ export const techData = {
     url: "https://img.shields.io/badge/-React-61DAFB?style=flat-square&logo=react&logoColor=white",
     type: "Library",
   },
-
   ContextAPI: {
     name: "Context API",
     description:
@@ -263,12 +181,6 @@ export const techData = {
     url: "https://img.shields.io/badge/-Node-339933?style=flat-square&logo=node.js&logoColor=white",
     type: "Backend",
   },
-  // MySQL: {
-  //   name: "MySQL",
-  //   description: "Open-source relational database management system",
-  //   url: "https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white",
-  //   type: "Database",
-  // },
   PSQL: {
     name: "PSQL",
     description: "Open-source relational database management system",
@@ -329,4 +241,128 @@ export const techData = {
     url: "https://img.shields.io/badge/-Prisma-2D3748?style=flat-square&logo=prisma&logoColor=white",
     type: "Backend",
   },
+  Flask: {
+    name: "Flask",
+    description: "A lightweight Python web framework",
+    url: "https://img.shields.io/badge/-Flask-000000?style=flat-square&logo=flask&logoColor=white",
+    type: "Backend",
+  },
+  "Google Cloud": {
+    name: "Google Cloud",
+    description: "Google Cloud Platform",
+    url: "https://img.shields.io/badge/-GoogleCloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white",
+    type: "Cloud",
+  },
+  Python: {
+    name: "Python",
+    description: "A popular high-level programming language known for its readability and versatility.",
+    url: "https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white",
+    type: "Language",
+  },
+  "Machine Learning": {
+    name: "Machine Learning",
+    description: "The study of computer algorithms that improve automatically through experience.",
+    url: "https://img.shields.io/badge/-Machine%20Learning-FF6384?style=flat-square",
+    type: "Artificial Intelligence",
+  },
+  AI: {
+    name: "AI",
+    description: "Artificial Intelligence enabling machines to mimic human behavior.",
+    url: "https://img.shields.io/badge/-AI-FFB74D?style=flat-square",
+    type: "Artificial Intelligence",
+  },
+  "Real-time": {
+    name: "Real-time",
+    description: "Real-time data processing capabilities for immediate results.",
+    url: "https://img.shields.io/badge/-Real--time-4CAF50?style=flat-square",
+    type: "Feature",
+  },
+  "Data Visualization": {
+    name: "Data Visualization",
+    description: "Techniques and tools for representing data graphically.",
+    url: "https://img.shields.io/badge/-Data%20Visualization-00ACC1?style=flat-square",
+    type: "Visualization",
+  },
+  Dashboard: {
+    name: "Dashboard",
+    description: "Components and frameworks for building interactive dashboards.",
+    url: "https://img.shields.io/badge/-Dashboard-9C27B0?style=flat-square",
+    type: "UI Component",
+  },
+  Simulation: {
+    name: "Simulation",
+    description: "Tools and platforms for modeling real-world systems and scenarios.",
+    url: "https://img.shields.io/badge/-Simulation-795548?style=flat-square",
+    type: "Simulation",
+  },
+  "Full-stack": {
+    name: "Full-stack",
+    description: "Full-stack development encompassing both frontend and backend technologies.",
+    url: "https://img.shields.io/badge/-Full--stack-4CAF50?style=flat-square",
+    type: "Development",
+  },
+  "Fan Engagement": {
+    name: "Fan Engagement",
+    description: "Technologies focusing on engaging fans through interactive interfaces and real-time updates.",
+    url: "https://img.shields.io/badge/-Fan%20Engagement-FF5722?style=flat-square",
+    type: "Feature",
+  },
+  "K-Means": {
+    name: "K-Means",
+    description: "K-Means clustering algorithm for partitioning data.",
+    url: "https://img.shields.io/badge/-K--Means-9C27B0?style=flat-square",
+    type: "Algorithm",
+  },
+  "COVID-19": {
+    name: "COVID-19",
+    description: "Relating to the COVID-19 pandemic and its data analysis use cases.",
+    url: "https://img.shields.io/badge/-COVID--19-007BFF?style=flat-square",
+    type: "Event",
+  },
+  Interactive: {
+    name: "Interactive",
+    description: "Interactive UI elements and interfaces.",
+    url: "https://img.shields.io/badge/-Interactive-FF9800?style=flat-square",
+    type: "UI Component",
+  },
+  "Data Analysis": {
+    name: "Data Analysis",
+    description: "Data analysis and insights, often involving statistical techniques.",
+    url: "https://img.shields.io/badge/-Data%20Analysis-3F51B5?style=flat-square",
+    type: "Analytics",
+  }
 } as const;
+
+export const contactData = {
+  email: "yangcolin.y@gmail.com",
+  linkedIn: "https://www.linkedin.com/in/colin-y-yang"
+};
+
+export const summaryData = "I’m a dedicated and ambitious Computer Science student with a strong foundation in full-stack development, machine learning, and cloud technologies. Currently completing my A.S. at Irvine Valley College, I have a guaranteed transfer to UC Irvine in Fall 2025 to pursue my B.S. in Computer Science. I thrive on building impactful projects that bridge technology and user experience. My most notable work includes a Google Cloud x MLB Hackathon project, where I developed a full-stack fan engagement platform using React, Flask, and Tailwind CSS. This app features real-time game schedules, AI-driven multilingual news digests, and a k-means clustering recommendation system. Beyond hackathons, I’ve built a COVID-19 simulation dashboard in Flask, providing intuitive data insights through an interactive UI. My passion lies in leveraging AI and software engineering to create seamless, data-driven experiences. Always open to collaborating on innovative projects and connecting with like-minded engineers!";
+
+export const educationData = [
+  {
+    institution: "UC Irvine",
+    degree: "Bachelor's degree",
+    field: "Computer Science",
+    duration: "2025 - 2027"
+  },
+  {
+    institution: "Irvine Valley College",
+    degree: "Associate's degree",
+    field: "Computer Science",
+    duration: "June 2023 - August 2025"
+  },
+  {
+    institution: "Saddleback College",
+    degree: "Associate's degree",
+    field: "Computer Science",
+    duration: "June 2023 - August 2025"
+  },
+  {
+    institution: "University High School, Irvine",
+    degree: "High School Diploma",
+    field: "",
+    duration: "August 2019 - June 2023"
+  }
+] as const;

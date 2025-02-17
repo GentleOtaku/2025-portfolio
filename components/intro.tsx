@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import React from "react";
-import profileImg5 from "@/public/hs2.png";
+import profileImg5 from "@/public/profile.jpg";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
@@ -31,7 +31,7 @@ export default function Intro() {
           >
             <Image
               src={profileImg5}
-              alt="Chris"
+              alt="Colin Yang"
               width={192}
               height={192}
               priority
@@ -60,13 +60,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-3xl font-medium !leading-[1.5] sm:text-2xl"
       >
-        Hello, {"I'm"} <span className="font-bold italic">Chris</span>. A
-        full-stack developer from{" "}
-        <span className="font-bold italic text-red-600">London 🇬🇧</span>. I
-        enjoy building sites & <span className="font-bold italic">apps</span>.
-        My focus is{" "}
-        <span className="font-bold italic text-blue-600">React</span> (
-        <span className="font-bold italic">Next.js</span>)
+        Hi, I'm Colin. I’m a dedicated and ambitious <span className="text-blue-500">Computer Science</span> student with a strong foundation in <span className="text-green-500">full-stack development</span>, <span className="text-purple-500">machine learning</span>, and <span className="text-orange-500">cloud technologies</span>.
       </motion.h1>
 
       <motion.div
@@ -75,22 +69,12 @@ export default function Intro() {
         transition={{ delay: 0.1 }}
         className="flex flex-col sm:flex-row items-center justify-center gap-2 px-4 text-lg font-medium"
       >
-        <Link
-          href="#contact"
-          className="group bg-gray-900 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
-          onClick={() => {
-            setActiveSection("Contact");
-            setTimeOfLastClick(Date.now());
-          }}
-        >
-          Contact me here{" "}
-          <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition" />
-        </Link>
 
         <Link
-          href={CVLINK}
+          href="/resume.pdf"
+          download
           target="_blank"
-          className="group bg-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
+          className="group bg-black text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
         >
           Download CV{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition cursor-pointer" />
@@ -98,7 +82,7 @@ export default function Intro() {
 
         <div className="flex gap-2">
           <Link
-            href="https://www.linkedin.com/in/wisniewskichris/"
+            href="https://www.linkedin.com/in/colin-y-yang/"
             target="_blank"
             className="bg-white p-4 flex items-center gap-2 rounded-full text-gray-700 focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition border border-black/10"
           >
@@ -106,7 +90,7 @@ export default function Intro() {
           </Link>
 
           <Link
-            href="https://github.com/chriscodingxyz"
+            href="https://github.com/GentleOtaku"
             target="_blank"
             className="bg-white p-4 flex items-center gap-2 rounded-full text-gray-700 text-[1.35rem] focus:scale-[1.15] hover:text-gray-950 hover:scale-[1.15] active:scale-105 transition border border-black/10"
           >
