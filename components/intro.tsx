@@ -60,7 +60,7 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         className="mb-10 mt-4 px-4 text-3xl font-medium !leading-[1.5] sm:text-2xl"
       >
-        Hi, I'm Colin. I’m a dedicated and ambitious <span className="text-blue-500">Computer Science</span> student with a strong foundation in <span className="text-green-500">full-stack development</span>, <span className="text-purple-500">machine learning</span>, and <span className="text-orange-500">cloud technologies</span>.
+        Hi, I&apos;m Colin. I&apos;m a dedicated and ambitious <span className="text-blue-500">Computer Science</span> student with a strong foundation in <span className="text-green-500">full-stack development</span>, <span className="text-purple-500">machine learning</span>, and <span className="text-orange-500">cloud technologies</span>.
       </motion.h1>
 
       <motion.div
