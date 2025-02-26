@@ -76,7 +76,7 @@ export default function Intro() {
           target="_blank"
           className="group bg-black text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 active:scale-105 transition border border-black/10"
         >
-          Download CV{" "}
+          Download Resume{" "}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition cursor-pointer" />
         </Link>
 
